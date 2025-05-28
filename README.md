@@ -1,18 +1,30 @@
-Minio S3 storage extension for EverShop
-This extension allows you to store your EverShop files including product images, banners on Minio S3.
+# Minio S3 Storage Extension for EverShop
 
-Installation guide
+This extension allows you to store your EverShop files including product images, banners, and more on Minio S3.
 
-Step 1: Install the extension using npm:
+---
+
+## 🛠 Installation Guide
+
+### Step 1: Install the Extension
+
+Use `npm` to install the extension:
+
+```bash
 npm install @pemakz/evershop_s3_minio
+```
 
-Step 2: Enable the extension
-Edit the config/default.json file in the root directory of your EverShop installation and add the following line to the extensions section:
+---
 
+### Step 2: Enable the Extension
+
+Edit the `config/default.json` file in the root directory of your EverShop installation and add the extension to the `extensions` section:
+
+```json
 {
-  ...,
+  ...
   "system": {
-    ...,
+    ...
     "extensions": [
       ...,
       {
@@ -24,11 +36,15 @@ Edit the config/default.json file in the root directory of your EverShop install
     ]
   }
 }
+```
 
-Step 3: Add the S3 storage connection information to the environment variables
-Edit the .env file:
+---
 
+### Step 3: Add S3 Storage Connection Information
 
+Edit the `.env` file in the root directory and add your Minio configuration:
+
+```env
 MINIO_ENDPOINT="minio.com"
 MINIO_PORT="9000"
 MINIO_USE_SSL="false"
@@ -36,17 +52,30 @@ MINIO_ACCESS_KEY="accessKey"
 MINIO_SECRET_KEY="secretKey"
 MINIO_BUCKET_NAME="evershop"
 MINIO_PUBLIC_URL="minio.com"
+```
 
-Step 4: Active the Minio S3 storage
-Edit the config/default.json file in the root directory of your EverShop installation and add the following line to the file_storage section:
+---
 
+### Step 4: Activate the Minio S3 Storage
+
+Still in `config/default.json`, configure the file storage option:
+
+```json
 {
-  ...,
+  ...
   "system": {
-    ...,
+    ...
     "file_storage": "s3"
   }
 }
+```
 
-Step 5: Run the build command
+---
+
+### Step 5: Run the Build Command
+
+Run the following command to apply the changes:
+
+```bash
 npm run build
+```
