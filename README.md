@@ -6,6 +6,15 @@ This extension allows you to store your EverShop files including product images,
 
 ## 🛠 Installation Guide
 
+## Preconfiguration
+Before running the npm install command, make sure your project has an .npmrc file in the root directory with the following line:
+
+```ini
+@pemakz:registry=https://npm.pkg.github.com
+```
+
+This tells npm to pull all @pemakz scoped packages from the GitHub Package Registry.
+
 ### Step 1: Install the Extension
 
 Use `npm` to install the extension:
