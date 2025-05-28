@@ -1,6 +1,6 @@
 {
   "name": "@pemakz/evershop_s3_minio",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An extension for EverShop to use Minio S3 compatible storage for file storage.",
   "keywords": [
     "EverShop S3",
