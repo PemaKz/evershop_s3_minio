@@ -1,0 +1,20 @@
+{
+  "name": "@pemakz/evershop_s3_minio",
+  "version": "0.0.1",
+  "description": "An extension for EverShop to use Minio S3 compatible storage for file storage.",
+  "keywords": [
+    "EverShop S3",
+    "EverShop Minio",
+    "EverShop File Storage",
+    "EverShop Extension",
+    "Evershop"
+  ],
+  "author": "Pemakz",
+  "license": "GNU GENERAL PUBLIC LICENSE 3.0",
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "dependencies": {
+    "minio": "^8.0.5"
+  }
+}
